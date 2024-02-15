@@ -1,0 +1,681 @@
+/* Reset some default styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.enquiry-btn {
+  color: #fff;
+
+  text-align: center;
+  font-family: "Buenos Aires Trial";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background-color: #ff6a56;
+  padding: 8px 1rem;
+  border: 1px solid #ff6a56;
+  fill: linear-gradient(263deg, #ff6a56 1.1%, #fdaf4d 141.83%);
+
+  filter: drop-shadow(0px 8px 30px rgba(10, 2, 23, 0.2));
+}
+.menu-hide {
+  display: none;
+}
+.main-div {
+  background-color: #fff;
+  padding: 4rem;
+  width: 60%;
+  margin: auto;
+}
+
+.center {
+  margin: 4rem;
+  color: var(--Text-Dark, #0e1b2c);
+  text-align: center;
+  font-family: "Buenos Aires Trial";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.grid-three {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.service-btn {
+  text-align: center;
+  margin: 2rem;
+}
+
+.anchor-arrow {
+  color: #ff7361;
+  -webkit-text-stroke-width: 0.004166666883975267;
+  -webkit-text-stroke-color: #ff7361;
+  font-family: "Buenos Aires Trial";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  padding: 1rem;
+  background: transparent;
+}
+.anchor-arrow img {
+  position: relative;
+  top: 2px;
+  margin-left: 4px;
+}
+.main-div-feedback-parent {
+  background-color: #ffdcd8;
+}
+
+.box-Shadow {
+  box-shadow: -5px 4px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 600px) {
+  .main-div {
+    width: 80%;
+    padding: 1rem;
+  }
+  .grid-two {
+    grid-template-columns: 1fr;
+  }
+  .grid-three {
+    grid-template-columns: 1fr;
+  }
+  .main-div-feedback-parent .feedback-content-div {
+    width: 80%;
+    padding: 1rem;
+  }
+  .grid-three .feedback-inner-grid-center {
+    margin-top: 0;
+  }
+  .feedback-inner-grid {
+    margin-top: 0 !important;
+  }
+  .main-div .update-grid {
+    grid-template-columns: 1fr;
+  }
+  .main-div .img {
+    width: 100%;
+  }
+  .grid-two .blog-img {
+    width: 100%;
+  }
+  .footer .footer-content {
+    display: grid;
+    width: 100%;
+  }
+  .footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer .social-grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer .footer-nav {
+    display: grid;
+  }
+  .main-div-feedback-parent .steps-content-div {
+    width: 100%;
+    padding: 1rem;
+  }
+  .header-nav .header-link {
+    display: none;
+  }
+  .menu-hide {
+    display: block;
+  }
+}
+/* header css */
+.header {
+  height: auto;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #6c48f0;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  -webkit-transform: scaleX(2.1);
+  transform: scaleX(2.1);
+  z-index: -1;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+.header-link {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: #fff;
+}
+.header-link a {
+  cursor: pointer;
+}
+
+.header-link button {
+  padding: 8px 1rem;
+  border: 1px solid #ff6a56;
+  background: transparent;
+  color: #fff;
+}
+
+.header-body {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 2rem 0px;
+  color: #fff;
+}
+
+.header-heading {
+  color: var(--Text-White, #fff);
+  text-align: center;
+  font-family: "Buenos Aires Trial";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.header-sub-heading {
+  color: var(--Text-White, #fff);
+  font-family: "Buenos Aires Trial";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+.header-home {
+  color: var(--Text-White, #fff);
+  font-family: "Buenos Aires Trial";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  opacity: 0.5;
+}
+
+.header-enquiry-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-img {
+  width: 90px;
+  position: relative;
+  top: 7px;
+}
+
+/* service css */
+.service-cards {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 5px;
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+  align-items: center;
+}
+
+.service {
+  background-color: #fff;
+  padding: 4rem;
+  width: 60%;
+  margin: auto;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.service-label {
+  color: var(--Text-Dark, #0e1b2c);
+  font-family: "Buenos Aires Trial";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+/* Ambitions css */
+.img-Ambitions {
+  width: 100%;
+}
+
+.star-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.ambitions-description {
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+
+/* first step css */
+
+.test-pre-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.star-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.exam-img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.star-list img {
+  position: relative;
+  top: 10px;
+}
+
+.exam-img img {
+  width: 100px;
+}
+
+.explore-button {
+  padding: 1rem 2rem;
+  border: 1px solid #ff6a56;
+  background: #fff;
+  color: #ff7361;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+/* edge  css */
+.edge-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.h3-center {
+  margin: 2rem 0;
+}
+
+/* feedback  css */
+.feedback-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.feedback-inner-grid {
+  background-color: #fff;
+  padding: 4rem;
+  margin-top: 2rem;
+  border-radius: 20px;
+}
+.feedback-inner-grid-center {
+  background-color: #fff;
+  padding: 4rem;
+  margin-top: 7rem;
+  border-radius: 20px;
+}
+
+.feedback-name {
+  margin-top: 2rem;
+}
+
+.feedback-content-div {
+  background-color: #ffdcd8;
+  padding: 4rem;
+  width: 60%;
+  margin: auto;
+}
+.dots-grid {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* updates css */
+.update-grid {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  gap: 2rem;
+}
+.center-update {
+  text-align: left;
+  margin: 1rem;
+  color: var(--Text-Dark, #0e1b2c);
+  font-family: "Buenos Aires Trial";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.update-hiring {
+  border-radius: 10px;
+  background: #fdaf4d;
+  box-shadow: -5px 4px 50px 0px rgba(0, 0, 0, 0.1);
+  padding: 4rem;
+  text-align: left;
+}
+.update-paragrapgh {
+  color: var(--Text-Dark, #0e1b2c);
+  font-family: "Buenos Aires Trial";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.apply-btn {
+  color: #ff7361;
+
+  text-align: center;
+  font-family: "Buenos Aires Trial";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background-color: #fff;
+  padding: 8px 1rem;
+  border: 1px solid #fff;
+  margin-top: 4rem;
+}
+
+.update-grid-img {
+  width: 150px;
+  margin: auto;
+}
+.update-column-2 {
+  display: grid;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: -5px 4px 50px 0px rgba(0, 0, 0, 0.1);
+}
+.update-label1 {
+  color: var(--Text-Dark, #0e1b2c);
+  text-align: center;
+  font-family: "Buenos Aires Trial";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.update-label2 {
+  color: #226cf5;
+  text-align: center;
+  font-family: "Buenos Aires Trial";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.update-year {
+  color: var(--Text-Gray, #64647a);
+  text-align: center;
+  font-family: "Buenos Aires Trial";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.update-year-div {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* blogs  css */
+.heading-h3-blog {
+  color: #226cf5;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Buenos Aires Trial";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 1.8px;
+}
+.typography-blog {
+  color: var(--Text-Dark, #0e1b2c);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Buenos Aires Trial";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/* steps css */
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  color: #000;
+  font-family: "Buenos Aires Trial";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  position: relative;
+  left: 18px;
+}
+.circle2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #64647a;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  color: #000;
+  font-family: "Buenos Aires Trial";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  position: relative;
+  left: 18px;
+}
+
+.rectangle {
+  background-color: #fff;
+  padding: 4rem;
+  margin-top: 2rem;
+  text-align: center;
+  position: relative;
+}
+.rectangle.arrow-top {
+  margin-top: 2rem;
+}
+
+.rectangle.arrow-top:after {
+  content: " ";
+  position: absolute;
+  top: -15px;
+  border-top: none;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid #fff;
+}
+
+.anchor-arrow1 {
+  color: #ff7361;
+  -webkit-text-stroke-width: 0.004166666883975267;
+  -webkit-text-stroke-color: #ff7361;
+  font-family: "Buenos Aires Trial";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  background: transparent;
+}
+.anchor-arrow1 img {
+  margin-right: 1rem;
+}
+
+.arrow-img-2 {
+  margin-left: 1rem;
+}
+
+.steps-content-div {
+  background-color: #ffdcd8;
+  padding: 4rem;
+  width: 60%;
+  margin: auto;
+}
+.center-line {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* address details css */
+.details-grid {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  gap: 1rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.social-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* footer css */
+
+.footer {
+  display: grid;
+  gap: 10px;
+  background-color: #0e1b2c;
+  padding: 1rem 4rem;
+  position: relative;
+}
+
+.footer-heading {
+  text-align: center;
+  margin: 2rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Buenos Aires Trial";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.footer-heading-h3 {
+  text-align: center;
+  margin: 2rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Buenos Aires Trial";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.footer-content {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  color: #fff;
+}
+
+.social-grid-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social-grid-footer img {
+  width: 100px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  color: #000;
+  font-family: "Buenos Aires Trial";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background-color: #fff;
+  padding: 8px 1rem;
+  border: 1px solid #fff;
+  outline: none;
+}
